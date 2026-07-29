@@ -4,7 +4,7 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 6.0"
+      version = "= 6.41.0"
     }
 
     tls = {
@@ -297,7 +297,7 @@ resource "aws_eks_cluster" "devopsshack" {
 
   role_arn = aws_iam_role.devopsshack_cluster_role.arn
 
-  version = "1.36"
+  version = "1.33"
 
   vpc_config {
 
